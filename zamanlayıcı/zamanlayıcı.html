@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamanlayıcı</title>
+    <link rel="stylesheet" href="zamanlayıcı.css">
+    <link rel="stylesheet" href="/alarm/alarm.css">
+</head>
+
+<body>
+    <div class="time">
+        <a href="/alarm/alarm.html">Alarm</a>
+        <a href="/zaman.html">SAAT</a>
+        <a href="/kronometre/kronometre.html">Kronometre</a>
+    </div>
+    <h2 class="digi"><span>Zamanlayıcı</span> </h2>
+
+    <audio id="alarm-sound" src="/path/ses.mp3" preload="auto"></audio>
+
+    <div class="container">
+        <div class="timer">
+            <div class="hour">
+                <label for="hours">Saat:</label>
+                <input type="number" id="hours" min="0" max="23">
+            </div>
+            <div class="minutes">
+                <label for="minutes">Dakika:</label>
+                <input type="number" id="minutes" min="0" max="59">
+            </div>
+            <div class="seconds">
+                <label for="seconds">Saniye:</label>
+                <input type="number" id="seconds" min="0" max="59">
+            </div>
+            <div>
+                <button id="start-timer">Başlat</button>
+                <button id="stop-timer">Durdur</button>
+                <button id="continue-timer">Devam Et</button>
+            </div>
+        </div>
+        <div class="status">
+            <p id="timer-status">Zamanlayıcı durduruldu.</p>
+        </div>
+    </div>
+
+
+
+    <script src="zamanlayıcı.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="/zamanlayıcı/zamanlayıcı.css">
+    <link rel="stylesheet" href="alarm.css">
+</head>
+
+<body>
+    <div class="time">
+        <a href="/zaman.html">SAAT</a>
+        <a href="/kronometre/kronometre.html">kronometre</a>
+        <a href="/zamanlayıcı/zamanlayıcı.html">Zamanlayıcı</a>
+    </div>
+
+    <h2 class="digi"><span>Alarm</span> </h2>
+
+    <audio id="alarm-sound" src="/path/ses.mp3" preload="auto"></audio>
+
+    <div class="container">
+        <div class="alarm">
+            <div class="hour">
+                <label for="hour">Saat:</label>
+                <input type="number" id="hour" min="0" max="23">
+            </div>
+            <div class="minutes">
+                <label for="minutes">Dakika:</label>
+                <input type="number" id="minutes" min="0" max="59">
+            </div>
+            <div>
+                <button id="set-alarm">Alarm Kur</button>
+                <button id="clear-alarm">Alarm Temizle</button>
+                <button id="pause-alarm">Alarm Durdur</button>
+
+            </div>
+        </div>
+        <div class="status">
+            <p id="alarm-status">Alarm Kurulmadı.</p>
+        </div>
+    </div>
+    
+
+
+
+    <script src="alarm.js"></script>
+</body>
+
+</html>

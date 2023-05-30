@@ -1,0 +1,113 @@
+/** @format */
+
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.container .alarm {
+  margin: 5px 20px;
+  justify-content: space-between;
+  padding: 5px;
+  width: 70vb;
+  height: 40vb;
+  margin-left: 19%;
+}
+
+.hour,
+.minutes,
+.seconds {
+  font-size: 1.5em;
+  color: aliceblue;
+  margin: 9px 10px;
+}
+
+.hour label,
+.minutes label,
+.seconds label {
+  background-color: brown;
+  border-radius: 6px;
+  padding: 6px 13px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.hour input {
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 6px;
+  margin-left: 24px;
+}
+
+.minutes input,
+.seconds input {
+  margin-left: 5px;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+button {
+  padding: 5px 10px;
+  display: inline-block;
+  justify-content: space-between;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.status {
+  text-align: center;
+  height: 10px;
+  margin-right: 0;
+  font-size: 25px;
+  color: #fff;
+}
+
+#alarm-status {
+  background-color: white;
+  font-weight: bold;
+  color: red;
+  box-shadow: 2px 2px 4px yellow;
+  border-radius: 4px;
+}
+
+#timer-status {
+  box-shadow: 2px 2px 4px yellow;
+  color: red;
+  background-color: white;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: -60px;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

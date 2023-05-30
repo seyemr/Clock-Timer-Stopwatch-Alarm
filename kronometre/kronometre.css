@@ -1,0 +1,96 @@
+/** @format */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  margin-top: 67px;
+}
+
+.stopwatch {
+  text-align: center;
+}
+
+.oclock {
+  margin-top: -118px;
+}
+
+.oclock div {
+  display: inline-block;
+}
+
+.oclock span {
+  background-color: red;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px 10px;
+  opacity: 0.8;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.oclock .text {
+  font-size: 25px;
+  background-color: #2980b9;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+button {
+  margin: 0 5px;
+  padding: 8px 10px;
+  box-shadow: 2px 2px 4px yellow;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+button:hover {
+  background-color: #29b982;
+  color: #fff;
+}
+
+.tur {
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.lap {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.lap td {
+  padding: 10px;
+}
+
+.lap li {
+  list-style-type: none;
+}
+
+#tur {
+  font-weight: bold;
+}
+
+#tur-sure {
+  text-align: center;
+}
+
+#Toplam {
+  text-align: right;
+}

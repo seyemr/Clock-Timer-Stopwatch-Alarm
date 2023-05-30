@@ -1,0 +1,107 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("http://unsplash.it/1499/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.time {
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1px;
+  box-shadow: 2px 2px 6px yellow;
+  padding: 12px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-family: sans-serif;
+  color: white;
+  background-color: red;
+  padding: 8px 8px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  margin-top: 1px;
+  color: rgb(255, 255, 255);
+  padding: 12px;
+}
+
+h2 span {
+  margin-top: 10%;
+  background-color: blue;
+  color: yellow;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.979);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.979);
+}
+
+h2 span:hover {
+  background-color: yellow;
+  color: blue;
+}
+
+a:hover {
+  background-color: #fff;
+  color: red;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+}
+
+.clock div {
+  margin: 5px;
+  position: relative;
+}
+
+.clock span {
+  width: 100px;
+  height: 80px;
+  background: red;
+  opacity: 0.8;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.clock .text {
+  height: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: darkblue;
+  opacity: 0.8;
+}
+
+.clock #ampm {
+  bottom: 0;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  font-size: 20px;
+  background: green;
+}
